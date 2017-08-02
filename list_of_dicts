@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+from pprint import pprint
+
+fields = ['name', 'sex']
+bros = [
+    dict(zip(fields, ['jan reisinger', 'male'])),
+    dict(zip(fields, ['peter reisinger', 'male'])),
+    dict(zip(fields, ['jozef reisinger', 'male'])),
+]
+
+pprint(bros)
+
+for i in range(len(bros)):
+    print('first name:', bros[i]['name'].split()[0].title())
