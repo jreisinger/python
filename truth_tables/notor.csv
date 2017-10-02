@@ -1,0 +1,5 @@
+NOT OR; True?
+not (True or False); False
+not (True or True); False
+not (False or True); False
+not (False or False); True

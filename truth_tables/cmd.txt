@@ -1,0 +1,3 @@
+for f in not.csv or.csv and.csv notor.csv notand.csv \!\=.csv \=\=.csv; do 
+    perl ../../varia/gen_ascii_table.pl $f; 
+done
