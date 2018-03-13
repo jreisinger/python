@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# Python data structure cookbook
+#
 
 LIST_OF_TUPLES = [
     ('one',   1),
