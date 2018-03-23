@@ -2,7 +2,7 @@
 
 from pprint import pprint
 
-shells = {}
+shells = {} # create empty dict
 
 for line in open("/etc/passwd"):
     line = line.rstrip()
