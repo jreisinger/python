@@ -9,3 +9,5 @@ What if the element we are checking isn't a boolean? A false value doesn't neces
 * `()` (empty tuple)
 * `{}` (empty dict)
 * `set()` (empty set)
+
+Anything else is considered `True`.
