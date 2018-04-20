@@ -2,14 +2,12 @@
 
 from pprint import pprint
 
-shells = {} # create empty dict
+shells_count = {} # create empty dict
 
 for line in open("/etc/passwd"):
-    line = line.rstrip()
-    fields = line.split(":")
-    shell = fields[-1]
-    if shell not in shells: # <-- thiz :-)
-        shells[shell] = 0
-    shells[shell] += 1
+    shell = line.rstrip().split(":")[-1]
+    if shell not in shells_count: # <-- thiz :-)
+        shells_count[shell] = 0
+    shells_count[shell] += 1
 
-pprint(shells)
+pprint(shells_count)
