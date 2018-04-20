@@ -9,8 +9,7 @@ for line in open("/etc/passwd"):
     fields = line.split(":")
     shell = fields[-1]
     if shell not in shells: # <-- thiz :-)
-        shells[shell] = 1
-    else:
-        shells[shell] += 1
+        shells[shell] = 0
+    shells[shell] += 1
 
 pprint(shells)
