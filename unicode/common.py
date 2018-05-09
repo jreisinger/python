@@ -6,6 +6,7 @@ common_characters = (
     'DOLLAR SIGN',
     'EURO SIGN',
     'SNOWMAN',
+    'PILE OF POO',
 )
 
 for char in common_characters:
