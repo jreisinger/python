@@ -5,14 +5,14 @@ Do not meddle in the affairs of wizzards,
 for you are crunchy and good with ketchup.\
 """
 
-print("--> The text has", len(text), "bytes")
+print("--> The text has", len(text), "chars")
 
 filename = "/tmp/wizz.txt"
 
 print("--> Write a text file...")
 fileobj = open(filename, "wt") # "t" is default. 2nd option is "b"inary
-bytes_written = fileobj.write(text)
-print(bytes_written, "bytes written to", filename)
+written = fileobj.write(text)
+print(written, "chars written to", filename)
 fileobj.close()
 
 print("--> Read a text file all lines at once...")
@@ -31,10 +31,10 @@ print("--> Write a file by chunks...")
 fout = open(filename, "w")
 size = len(text)
 offset = 0
-chunk = 10 # bytes
+chunk = 10 # chars
 while True:
     if offset > size:
         break
     written = fout.write(text[offset:offset+chunk])
-    print("Written", written, "bytes")
+    print("Written", written, "chars")
     offset += chunk
