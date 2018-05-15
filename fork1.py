@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 "forks child processes until you type 'q' (Programming Python 4th, p. 179)"
 
