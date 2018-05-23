@@ -17,5 +17,5 @@ if __name__ == '__main__':
     for url in sys.argv[1:]:
         print '--> links in', url
         for num, link in enumerate(get_links(url), start=1):
-            print "%02d %s" % (num, link)
+            print "%03d %s" % (num, link)
         print
