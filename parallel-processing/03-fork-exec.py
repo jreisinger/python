@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"starts programs unitl you type 'q'"
+"starts programs until you type 'q'"
 
 import os
 
@@ -13,4 +13,5 @@ while True:
         assert False, 'error starting program'               # shouldn't return
     else:
         print('Child is', pid)
+        # defunct (zombie) processes will be cleaned on break
         if input() == 'q': break
