@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+spawn a new long running process and then terminate it
+Introducing Python, ch. 10
+"""
+
 import multiprocessing, time, os
 
 def whoami(name):
