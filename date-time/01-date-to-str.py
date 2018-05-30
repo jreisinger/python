@@ -8,5 +8,5 @@ from datetime import date
 today       = date.today()
 today_str   = today.isoformat()
 
-fout = open("today.txt", "w")
+fout = open("/tmp/today.txt", "w")
 print(today_str, file=fout)
