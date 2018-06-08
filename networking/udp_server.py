@@ -8,6 +8,7 @@ max_size = 4096
 
 print('Starting the server at', datetime.now())
 print('Waiting for a client to call.')
+
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server.bind(server_address)
 
