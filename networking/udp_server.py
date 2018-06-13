@@ -3,8 +3,8 @@
 from datetime import datetime
 import socket
 
-server_address = ('localhost', 6789)
-max_size = 4096
+server_address  = ('localhost', 6789)
+max_size        = 4096
 
 print('Starting the server at', datetime.now())
 print('Waiting for a client to call.')
