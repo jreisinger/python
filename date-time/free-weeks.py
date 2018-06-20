@@ -41,7 +41,9 @@ for line in open(sys.argv[1]):
         busy.append(week)
         
 week_now = datetime.date.today().isocalendar()[1]
-for w in range(week_now, 53):
+print("{:<5} {}".format("Week", "Weeks from now"))
+for w in range(week_now + 1, 53):
     if w not in busy:
-        print(w)
+        delta = w - week_now
+        print("{:<5} {}".format(w, delta))
 
