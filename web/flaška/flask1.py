@@ -26,9 +26,12 @@ def home():
 def echo(thingy):
     return thingy
 
-app.run(port=9999, debug=True)
 
 ## To run this app:
 #
 # export FLASK_APP=flask1.py
+# export FLASK_DEBUG=1
 # flask run
+#
+# or uncomment the next line
+#app.run(port=5000, debug=True)
